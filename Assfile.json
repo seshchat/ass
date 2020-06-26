@@ -1,0 +1,38 @@
+{
+  "name": "SESH",
+  "port": 4000,
+
+  "options": [{
+    "name": "Onboarding",
+    
+    "endpoints": [{
+      "method": "POST",
+      "endpoint": "/graphql",
+
+      "statusCode": 200,
+      "body": {
+        "hello": "world"
+      }
+    }]
+  }, {
+    "name": "Chat",
+
+    "endpoints": [{
+      "method": "POST",
+      "endpoint": "/graphql",
+
+      "statusCode": 200,
+      "body": {
+        "hello": "world",
+        "x": 0
+      }
+    }]
+  }, {
+    "name": "Test",
+
+    "endpoints": [{
+      "method": "GET",
+      "endpoint": "/graphql"
+    }]
+  }]
+}

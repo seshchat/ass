@@ -1,0 +1,17 @@
+{
+  "name": "ass",
+  "version": "1.0.0",
+  "description": "Mock server for App / Play Store screenshots",
+  "main": "index.js",
+  "repository": "https://github.com/seshchat/ass",
+  "author": "William Gibson <william@sesh.chat>",
+  "license": "MIT",
+  "bin": "./index.js",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.2.0",
+    "ora": "^4.0.4"
+  }
+}
