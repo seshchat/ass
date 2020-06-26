@@ -1,3 +1,17 @@
+# Ass
+Ass creates a mock REST server for your app to communicate with to fake its state for App Store / Play Store / whatever
+
+## Installation
+```bash
+npm i -g @seshchat/ass
+```
+```bash
+yarn global add @seshchat/ass
+```
+
+## Usage
+Create an `Assfile.json` containing information about your mock server. Here's an example:
+```json
 {
   "name": "SESH",
   "port": 4000,
@@ -27,12 +41,11 @@
         "x": 0
       }
     }]
-  }, {
-    "name": "Test",
-
-    "endpoints": [{
-      "method": "GET",
-      "endpoint": "/graphql"
-    }]
   }]
 }
+```
+
+Then start the Ass server:
+```bash
+ass ./Assfile.json
+```
